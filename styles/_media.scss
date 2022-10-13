@@ -1,0 +1,391 @@
+@media screen and (max-width: 1280px){
+    // HOME PAGE
+    .header{
+        .header-content{
+            .right-header{
+                .welcome-text{
+                    font-size: 4rem;
+                }
+                .name{
+                    font-size: 1.6rem;
+                }
+            }
+            .left-header{
+                .image{
+                    height: 50%;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    // END OF HOME PAGE
+
+    // PORTOFOLIO PAGE
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    // END OF PORTFOLIO PAGE
+
+    // CONTACT PAGE
+    .contact-content-ctn{
+        flex-direction: column-reverse;
+        padding-bottom: 6rem;
+        .right-contact{
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            width: 100%;
+            .your-details{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem ;
+                }
+            }
+        }
+    }
+    // CONTACT PAGE END
+}
+
+@media screen and (max-width: 1145px){
+
+    // DISPLAY NAVBAR
+    .controls{
+        display: none;
+    }
+    .social-container{
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    // END OF DISPLAY
+
+    // GENERAL
+    .logo-ctn{
+        width: 100%;
+        background-color: var(--color-black);
+        box-shadow: 0 .2rem .6rem rgba(0,0,0,.4);
+        a{
+            font-size: 1.5rem;
+            opacity: .8;
+        }
+    }
+    section{
+        padding: 4rem 6rem !important;
+        margin-bottom: 0;
+    }
+
+    .btn-ctn {
+        font-size: .8rem;
+    }
+    // END OF GENERAL USE
+    
+    // HOME PAGE
+    .header{
+        padding: 0rem 2rem;
+        width: 100%;
+        .header-content{
+            width: 100%;
+            grid-template-columns: 1fr;
+            padding-top: 6rem;
+            &::before{
+                content:'';
+                background-image: url(../images/Patt.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: .1;
+                filter: grayscale(10%);
+            }
+            .right-header {
+                padding-right: 20% !important;
+                grid-row: 1;
+                width: 100%;
+                margin: 0 auto;
+                padding-right: 0;
+                padding-top: 1rem;
+                p{
+                    font-weight: 700;
+                }
+            }
+            
+            .left-header{
+                display: none;
+                // width: 100%;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                // margin-top: 3rem;
+                // .h-shape{
+                //     display: none;
+                // }
+                // .image{
+                //     height: auto;
+                //     width: 60%;
+                //     margin-left: 0;
+                // }
+            }
+        }
+    }
+    // END OF HOME PAGE
+    // CONTACT PAGE
+    .contact-content-ctn{
+        margin: 0 8rem;
+    }
+    // END OF CONTACT PAGE
+
+}
+
+@media screen and (max-width: 950px){
+    // blog page
+    .bloggs{
+        padding-bottom: 6rem;
+        .blog{
+            .img-ctn{
+                height: 25rem;
+                width: 80%;
+                .date{
+                    font-size: .6rem;
+                }
+            }
+            .blog-text {
+                h4{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: .8rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+    // end of blog page
+    // CONTACT PAGE
+    .contact-content-ctn{
+        margin: 0 2rem;
+    }
+    // END OF CONTACT PAGE
+}
+
+@media screen and (max-width: 600px){
+    // general usage
+    .logo-ctn{
+        font-size: 1.8rem;
+        padding-left: 0 !important;
+    }
+    header{
+        padding: 0;
+    }
+    section{
+        padding: 2rem 2rem !important;
+    }
+    .theme-btn{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+       
+    .sides{
+        .social-ctn{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .social-items{
+                a{
+                    font-size: .8rem;
+                    padding: .4rem;
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        
+    }
+    .main-title{
+        margin-top: 2rem;
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .bg-text {
+        font-size: 2rem !important;
+    }
+    // end of general usage
+
+    // home page
+    .header {
+        .header-content{
+            padding: 0rem 1rem;
+            .right-header{
+                    padding-left: 0rem;
+                    padding-right: 0 !important;
+                    .welcome-text{
+                        margin-bottom: .6rem;
+                    }
+                    .contact-btn{
+                        margin-left: .5rem !important;
+                    }
+            }
+        }
+    }
+    
+    // end of home page
+
+    // about page
+    .about-container{
+        .main-about{
+            p{
+                font-size: 1rem;
+            }
+            .conect-ctn{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    // end of about page
+
+    // portfolio/project page
+    .portfolios{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+        .portfolio-item{
+            margin: 0 auto;
+            img{
+                height: 15rem;
+            }
+        }
+    }
+    // end of portfolio/project page
+    // blog page
+    .bloggs{
+        .blog{
+            .img-ctn{
+                height: 20rem;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    // end of blog page  
+    // CONTACT PAGE
+    .contact-content-ctn{
+        margin: 0;
+    }
+    // END OF CONTACT PAGE
+
+}
+@media screen and (max-width: 500px){
+    // general usage
+    .main-title{
+        margin-top: 2rem;
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+    .bg-text {
+        font-size: 2rem !important;
+    }
+    // end of general usage
+
+    // home page
+    .header{
+        .header-content{
+            padding: 0rem .5rem;
+            .right-header{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                .welcome-text {
+                    font-size: 3rem;
+                }
+                .name{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+                .btn-ctn {
+                    font-size: .6rem;
+                }
+            
+                .contact-btn{
+                    .contact-text{
+                        padding: 0 .4rem !important;
+                    }
+                }
+                .main-btn{
+                    .btn-text{
+                        padding: 0 .4rem !important;
+                    }
+                }
+            }
+        }
+    }
+    // end of home page
+    // about page
+   .about-container{
+        .main-about{
+            p{
+                font-size: .8rem;
+            }
+            .conect-ctn{
+                font-size: 1rem;
+            }
+        }
+   }
+    // end of about page
+    // blog page
+    .bloggs{
+        .blog{
+            .img-ctn{
+                height: 15rem;
+            }
+            .blog-text{
+                h4{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    // end of blog page
+
+    // contact page
+    .contact-content-ctn{
+        .left-contact{
+            h4{
+                font-size: 1rem;
+            }
+            .contact-info{
+                font-size: .8rem;
+            }
+        }
+        .right-contact{
+            .input-control{
+                margin: 1rem 0;
+                input, textarea{
+                    padding: .4rem .5rem;
+                    font-size: .8rem;
+                }
+            }
+            .your-details{
+                :last-child{
+                    margin-top: 1rem ;
+                }
+            }
+            .submit-btn{
+                font-size: .6rem;
+                padding: .3rem .6rem;
+            }
+        }
+    }
+    // end of contact page
+}
